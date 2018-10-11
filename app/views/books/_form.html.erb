@@ -12,32 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :isbn %>
+    <%= form.label :ISBN %>
     <%= form.text_field :isbn, id: :book_isbn %>
   </div>
 
   <div class="field">
-    <%= form.label :title %>
+    <%= form.label :書籍名 %>
     <%= form.text_field :title, id: :book_title %>
   </div>
 
   <div class="field">
-    <%= form.label :price %>
+    <%= form.label :価格 %>
     <%= form.number_field :price, id: :book_price %>
   </div>
 
   <div class="field">
-    <%= form.label :publish %>
+    <%= form.label :出版社 %>
     <%= form.text_field :publish, id: :book_publish %>
   </div>
 
   <div class="field">
-    <%= form.label :published %>
+    <%= form.label :出版日 %>
     <%= form.date_select :published, id: :book_published %>
   </div>
 
   <div class="field">
-    <%= form.label :cd %>
+    <%= form.label :添付品 %>
     <%= form.check_box :cd, id: :book_cd %>
   </div>
 
