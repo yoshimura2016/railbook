@@ -5,3 +5,19 @@
 <p>まだまだ読みたい本がたくさんある</p>
 
 <%= link_to '書籍一覧', books_path %>
+
+<h3>最近読んだ本</h3>
+
+<table border="1">
+  <tr>
+    <th>書籍名</th>
+    <th>登録日時</th>
+  </tr>
+
+  <% @books.each do |book| %>
+    <tr>
+      <td><%= book.title %></td>
+      <td><%= book.created_at %></td>
+    </tr>
+  <% end %>
+</table>
